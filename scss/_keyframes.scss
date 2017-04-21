@@ -1,0 +1,49 @@
+@keyframes petalsGrow {
+    //petals grow animation
+    from {
+        width: $petal_width_start;
+        height: $petal_height_start;
+    }
+
+    to {
+        width: $petal_width;
+        height: $petal_height;
+    }
+}
+@keyframes petalsColor {
+    //petals change color
+    to {
+        background-color: $petal_color_bigscreen;
+    }
+}
+@mixin petals_direction($position,$deg_rotation) {
+    #{$position}: nth($random_position_list,random(8));
+    // transform: rotate($deg_rotation);
+}
+@for $i from 1 through 8 {
+    $rotate: ($i*46deg);
+    $final_position: (random(30) - 350);
+    @keyframes sway_petal#{$i} {
+        from {
+            bottom: 0;
+        }
+
+        to {
+            transform: rotateZ($rotate + 545deg) rotateX($rotate + 545deg);
+            @if ($i<1 or $i>5) {
+                 @include petals_direction("left",545deg);
+            }
+            @else {
+                 @include petals_direction("right",545deg);
+            }
+            // $final_position:(-350 + ($i * 2));
+            @if($final_position > -229) {
+                bottom: $final_position+%;
+            }
+            @else {
+                bottom: -307%;
+            }
+        }
+
+    }
+}

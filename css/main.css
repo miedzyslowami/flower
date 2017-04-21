@@ -1,0 +1,909 @@
+@keyframes petalsGrow {
+  from {
+    width: 1%;
+    height: 1%; }
+  to {
+    width: 100%;
+    height: 100%; } }
+
+@keyframes petalsColor {
+  to {
+    background-color: red; } }
+
+@keyframes sway_petal1 {
+  from {
+    bottom: 0; }
+  to {
+    transform: rotateZ(591deg) rotateX(591deg);
+    right: -75px;
+    bottom: -307%; } }
+
+@keyframes sway_petal2 {
+  from {
+    bottom: 0; }
+  to {
+    transform: rotateZ(637deg) rotateX(637deg);
+    right: -121px;
+    bottom: -307%; } }
+
+@keyframes sway_petal3 {
+  from {
+    bottom: 0; }
+  to {
+    transform: rotateZ(683deg) rotateX(683deg);
+    right: 108px;
+    bottom: -307%; } }
+
+@keyframes sway_petal4 {
+  from {
+    bottom: 0; }
+  to {
+    transform: rotateZ(729deg) rotateX(729deg);
+    right: 108px;
+    bottom: -307%; } }
+
+@keyframes sway_petal5 {
+  from {
+    bottom: 0; }
+  to {
+    transform: rotateZ(775deg) rotateX(775deg);
+    right: -335px;
+    bottom: -307%; } }
+
+@keyframes sway_petal6 {
+  from {
+    bottom: 0; }
+  to {
+    transform: rotateZ(821deg) rotateX(821deg);
+    left: -121px;
+    bottom: -307%; } }
+
+@keyframes sway_petal7 {
+  from {
+    bottom: 0; }
+  to {
+    transform: rotateZ(867deg) rotateX(867deg);
+    left: 1px;
+    bottom: -307%; } }
+
+@keyframes sway_petal8 {
+  from {
+    bottom: 0; }
+  to {
+    transform: rotateZ(913deg) rotateX(913deg);
+    left: 1px;
+    bottom: -307%; } }
+
+body {
+  overflow: hidden;
+  background-color: #7dd1f0;
+  -webkit-transition: background-color 5s ease-in;
+  -moz-transition: background-color 5s ease-in;
+  -ms-transition: background-color 5s ease-in;
+  -o-transition: background-color 5s ease-in;
+  transition: background-color 5s ease-in; }
+  body header {
+    height: 200px;
+    width: 100vw; }
+    body header .flower_petal1 {
+      background-color: #89d481;
+      position: absolute;
+      -webkit-transform: rotate(45deg);
+      -moz-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      -o-transform: rotate(45deg);
+      transform: rotate(45deg);
+      display: inline-block;
+      width: 1%;
+      height: 1%;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 300px;
+      -ms-border-radius: 300px;
+      -o-border-radius: 300px;
+      border-radius: 300px;
+      /* behavior: url(./border-radius.htc); For IE, download and customize htc file http://curved-corner.googlecode.com/files/border-radius.htc */
+      -webkit-border-top-right-radius: 126px;
+      -moz-border-top-right-radius: 126px;
+      -ms-border-top-right-radius: 126px;
+      -o-border-top-right-radius: 126px;
+      border-top-right-radius: 126px;
+      -webkit-border-bottom-left-radius: 0;
+      -moz-border-bottom-left-radius: 0;
+      -ms-border-bottom-left-radius: 0;
+      -o-border-bottom-left-radius: 0;
+      border-bottom-left-radius: 0;
+      margin-left: 15px;
+      -webkit-transform-origin: -24% 122%;
+      -moz-transform-origin: -24% 122%;
+      -ms-transform-origin: -24% 122%;
+      -o-transform-origin: -24% 122%;
+      transform-origin: -24% 122%;
+      -webkit-animation: petalsGrow 0.5s;
+      -moz-animation: petalsGrow 0.5s;
+      -ms-animation: petalsGrow 0.5s;
+      animation: petalsGrow 0.5s;
+      -webkit-animation-delay: 0.3s;
+      -moz-animation-delay: 0.3s;
+      -ms-animation-delay: 0.3s;
+      animation-delay: 0.3s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      -moz-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      -ms-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      -o-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01); }
+      body header .flower_petal1:hover {
+        -webkit-box-shadow: inset 0 0 18px 8px #68c85d;
+        -moz-box-shadow: inset 0 0 18px 8px #68c85d;
+        box-shadow: inset 0 0 18px 8px #68c85d;
+        filter: progid:DXImageTransform.Microsoft.dropshadow OffX=31 px, OffY=38 px, Color="black", Positive= "false";
+        /* IE 5.5 */
+        border-collapse: separate;
+        /* Required by IE 9 */ }
+      @media screen and (min-width: 800px) {
+        body header .flower_petal1 {
+          background-color: red;
+          height: 100%;
+          width: 100%; }
+          body header .flower_petal1:hover {
+            -webkit-box-shadow: inset 0 0 18px 5px white;
+            -moz-box-shadow: inset 0 0 18px 5px white;
+            box-shadow: inset 0 0 18px 5px white;
+            filter: progid:DXImageTransform.Microsoft.dropshadow OffX=31 px, OffY=38 px, Color="black", Positive= "false";
+            /* IE 5.5 */
+            border-collapse: separate;
+            /* Required by IE 9 */ } }
+      @media screen and (max-width: 500px) {
+        body header .flower_petal1 {
+          -webkit-animation-name: sway_petal1;
+          -moz-animation-name: sway_petal1;
+          -ms-animation-name: sway_petal1;
+          animation-name: sway_petal1;
+          -webkit-animation-duration: 3s;
+          -moz-animation-duration: 3s;
+          -ms-animation-duration: 3s;
+          animation-duration: 3s;
+          -webkit-animation-fill-mode: inifinite;
+          -moz-animation-fill-mode: inifinite;
+          -ms-animation-fill-mode: inifinite;
+          animation-fill-mode: inifinite;
+          -webkit-animation-timing-function: out-sine;
+          -moz-animation-timing-function: out-sine;
+          -ms-animation-timing-function: out-sine;
+          animation-timing-function: out-sine;
+          height: 100%;
+          width: 100%; } }
+    body header .flower_petal2 {
+      background-color: #b1fdd1;
+      position: absolute;
+      -webkit-transform: rotate(90deg);
+      -moz-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+      -o-transform: rotate(90deg);
+      transform: rotate(90deg);
+      display: inline-block;
+      width: 1%;
+      height: 1%;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 300px;
+      -ms-border-radius: 300px;
+      -o-border-radius: 300px;
+      border-radius: 300px;
+      /* behavior: url(./border-radius.htc); For IE, download and customize htc file http://curved-corner.googlecode.com/files/border-radius.htc */
+      -webkit-border-top-right-radius: 126px;
+      -moz-border-top-right-radius: 126px;
+      -ms-border-top-right-radius: 126px;
+      -o-border-top-right-radius: 126px;
+      border-top-right-radius: 126px;
+      -webkit-border-bottom-left-radius: 0;
+      -moz-border-bottom-left-radius: 0;
+      -ms-border-bottom-left-radius: 0;
+      -o-border-bottom-left-radius: 0;
+      border-bottom-left-radius: 0;
+      margin-left: 15px;
+      -webkit-transform-origin: -24% 122%;
+      -moz-transform-origin: -24% 122%;
+      -ms-transform-origin: -24% 122%;
+      -o-transform-origin: -24% 122%;
+      transform-origin: -24% 122%;
+      -webkit-animation: petalsGrow 0.5s;
+      -moz-animation: petalsGrow 0.5s;
+      -ms-animation: petalsGrow 0.5s;
+      animation: petalsGrow 0.5s;
+      -webkit-animation-delay: 0.6s;
+      -moz-animation-delay: 0.6s;
+      -ms-animation-delay: 0.6s;
+      animation-delay: 0.6s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      -moz-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      -ms-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      -o-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01); }
+      body header .flower_petal2:hover {
+        -webkit-box-shadow: inset 0 0 18px 8px #9bfcc4;
+        -moz-box-shadow: inset 0 0 18px 8px #9bfcc4;
+        box-shadow: inset 0 0 18px 8px #9bfcc4;
+        filter: progid:DXImageTransform.Microsoft.dropshadow OffX=31 px, OffY=38 px, Color="black", Positive= "false";
+        /* IE 5.5 */
+        border-collapse: separate;
+        /* Required by IE 9 */ }
+      @media screen and (min-width: 800px) {
+        body header .flower_petal2 {
+          background-color: red;
+          height: 100%;
+          width: 100%; }
+          body header .flower_petal2:hover {
+            -webkit-box-shadow: inset 0 0 18px 5px white;
+            -moz-box-shadow: inset 0 0 18px 5px white;
+            box-shadow: inset 0 0 18px 5px white;
+            filter: progid:DXImageTransform.Microsoft.dropshadow OffX=31 px, OffY=38 px, Color="black", Positive= "false";
+            /* IE 5.5 */
+            border-collapse: separate;
+            /* Required by IE 9 */ } }
+      @media screen and (max-width: 500px) {
+        body header .flower_petal2 {
+          -webkit-animation-name: sway_petal2;
+          -moz-animation-name: sway_petal2;
+          -ms-animation-name: sway_petal2;
+          animation-name: sway_petal2;
+          -webkit-animation-duration: 3s;
+          -moz-animation-duration: 3s;
+          -ms-animation-duration: 3s;
+          animation-duration: 3s;
+          -webkit-animation-fill-mode: inifinite;
+          -moz-animation-fill-mode: inifinite;
+          -ms-animation-fill-mode: inifinite;
+          animation-fill-mode: inifinite;
+          -webkit-animation-timing-function: out-sine;
+          -moz-animation-timing-function: out-sine;
+          -ms-animation-timing-function: out-sine;
+          animation-timing-function: out-sine;
+          height: 100%;
+          width: 100%; } }
+    body header .flower_petal3 {
+      background-color: #7dc4bb;
+      position: absolute;
+      -webkit-transform: rotate(135deg);
+      -moz-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+      -o-transform: rotate(135deg);
+      transform: rotate(135deg);
+      display: inline-block;
+      width: 1%;
+      height: 1%;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 300px;
+      -ms-border-radius: 300px;
+      -o-border-radius: 300px;
+      border-radius: 300px;
+      /* behavior: url(./border-radius.htc); For IE, download and customize htc file http://curved-corner.googlecode.com/files/border-radius.htc */
+      -webkit-border-top-right-radius: 126px;
+      -moz-border-top-right-radius: 126px;
+      -ms-border-top-right-radius: 126px;
+      -o-border-top-right-radius: 126px;
+      border-top-right-radius: 126px;
+      -webkit-border-bottom-left-radius: 0;
+      -moz-border-bottom-left-radius: 0;
+      -ms-border-bottom-left-radius: 0;
+      -o-border-bottom-left-radius: 0;
+      border-bottom-left-radius: 0;
+      margin-left: 15px;
+      -webkit-transform-origin: -24% 122%;
+      -moz-transform-origin: -24% 122%;
+      -ms-transform-origin: -24% 122%;
+      -o-transform-origin: -24% 122%;
+      transform-origin: -24% 122%;
+      -webkit-animation: petalsGrow 0.5s;
+      -moz-animation: petalsGrow 0.5s;
+      -ms-animation: petalsGrow 0.5s;
+      animation: petalsGrow 0.5s;
+      -webkit-animation-delay: 0.9s;
+      -moz-animation-delay: 0.9s;
+      -ms-animation-delay: 0.9s;
+      animation-delay: 0.9s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      -moz-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      -ms-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      -o-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01); }
+      body header .flower_petal3:hover {
+        -webkit-box-shadow: inset 0 0 18px 8px #58b3a8;
+        -moz-box-shadow: inset 0 0 18px 8px #58b3a8;
+        box-shadow: inset 0 0 18px 8px #58b3a8;
+        filter: progid:DXImageTransform.Microsoft.dropshadow OffX=31 px, OffY=38 px, Color="black", Positive= "false";
+        /* IE 5.5 */
+        border-collapse: separate;
+        /* Required by IE 9 */ }
+      @media screen and (min-width: 800px) {
+        body header .flower_petal3 {
+          background-color: red;
+          height: 100%;
+          width: 100%; }
+          body header .flower_petal3:hover {
+            -webkit-box-shadow: inset 0 0 18px 5px white;
+            -moz-box-shadow: inset 0 0 18px 5px white;
+            box-shadow: inset 0 0 18px 5px white;
+            filter: progid:DXImageTransform.Microsoft.dropshadow OffX=31 px, OffY=38 px, Color="black", Positive= "false";
+            /* IE 5.5 */
+            border-collapse: separate;
+            /* Required by IE 9 */ } }
+      @media screen and (max-width: 500px) {
+        body header .flower_petal3 {
+          -webkit-animation-name: sway_petal3;
+          -moz-animation-name: sway_petal3;
+          -ms-animation-name: sway_petal3;
+          animation-name: sway_petal3;
+          -webkit-animation-duration: 3s;
+          -moz-animation-duration: 3s;
+          -ms-animation-duration: 3s;
+          animation-duration: 3s;
+          -webkit-animation-fill-mode: inifinite;
+          -moz-animation-fill-mode: inifinite;
+          -ms-animation-fill-mode: inifinite;
+          animation-fill-mode: inifinite;
+          -webkit-animation-timing-function: out-sine;
+          -moz-animation-timing-function: out-sine;
+          -ms-animation-timing-function: out-sine;
+          animation-timing-function: out-sine;
+          height: 100%;
+          width: 100%; } }
+    body header .flower_petal4 {
+      background-color: #cccda6;
+      position: absolute;
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+      display: inline-block;
+      width: 1%;
+      height: 1%;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 300px;
+      -ms-border-radius: 300px;
+      -o-border-radius: 300px;
+      border-radius: 300px;
+      /* behavior: url(./border-radius.htc); For IE, download and customize htc file http://curved-corner.googlecode.com/files/border-radius.htc */
+      -webkit-border-top-right-radius: 126px;
+      -moz-border-top-right-radius: 126px;
+      -ms-border-top-right-radius: 126px;
+      -o-border-top-right-radius: 126px;
+      border-top-right-radius: 126px;
+      -webkit-border-bottom-left-radius: 0;
+      -moz-border-bottom-left-radius: 0;
+      -ms-border-bottom-left-radius: 0;
+      -o-border-bottom-left-radius: 0;
+      border-bottom-left-radius: 0;
+      margin-left: 15px;
+      -webkit-transform-origin: -24% 122%;
+      -moz-transform-origin: -24% 122%;
+      -ms-transform-origin: -24% 122%;
+      -o-transform-origin: -24% 122%;
+      transform-origin: -24% 122%;
+      -webkit-animation: petalsGrow 0.5s;
+      -moz-animation: petalsGrow 0.5s;
+      -ms-animation: petalsGrow 0.5s;
+      animation: petalsGrow 0.5s;
+      -webkit-animation-delay: 1.2s;
+      -moz-animation-delay: 1.2s;
+      -ms-animation-delay: 1.2s;
+      animation-delay: 1.2s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      -moz-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      -ms-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      -o-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01); }
+      body header .flower_petal4:hover {
+        -webkit-box-shadow: inset 0 0 18px 8px #bdbe8d;
+        -moz-box-shadow: inset 0 0 18px 8px #bdbe8d;
+        box-shadow: inset 0 0 18px 8px #bdbe8d;
+        filter: progid:DXImageTransform.Microsoft.dropshadow OffX=31 px, OffY=38 px, Color="black", Positive= "false";
+        /* IE 5.5 */
+        border-collapse: separate;
+        /* Required by IE 9 */ }
+      @media screen and (min-width: 800px) {
+        body header .flower_petal4 {
+          background-color: red;
+          height: 100%;
+          width: 100%; }
+          body header .flower_petal4:hover {
+            -webkit-box-shadow: inset 0 0 18px 5px white;
+            -moz-box-shadow: inset 0 0 18px 5px white;
+            box-shadow: inset 0 0 18px 5px white;
+            filter: progid:DXImageTransform.Microsoft.dropshadow OffX=31 px, OffY=38 px, Color="black", Positive= "false";
+            /* IE 5.5 */
+            border-collapse: separate;
+            /* Required by IE 9 */ } }
+      @media screen and (max-width: 500px) {
+        body header .flower_petal4 {
+          -webkit-animation-name: sway_petal4;
+          -moz-animation-name: sway_petal4;
+          -ms-animation-name: sway_petal4;
+          animation-name: sway_petal4;
+          -webkit-animation-duration: 3s;
+          -moz-animation-duration: 3s;
+          -ms-animation-duration: 3s;
+          animation-duration: 3s;
+          -webkit-animation-fill-mode: inifinite;
+          -moz-animation-fill-mode: inifinite;
+          -ms-animation-fill-mode: inifinite;
+          animation-fill-mode: inifinite;
+          -webkit-animation-timing-function: out-sine;
+          -moz-animation-timing-function: out-sine;
+          -ms-animation-timing-function: out-sine;
+          animation-timing-function: out-sine;
+          height: 100%;
+          width: 100%; } }
+    body header .flower_petal5 {
+      background-color: #e1a1d9;
+      position: absolute;
+      -webkit-transform: rotate(225deg);
+      -moz-transform: rotate(225deg);
+      -ms-transform: rotate(225deg);
+      -o-transform: rotate(225deg);
+      transform: rotate(225deg);
+      display: inline-block;
+      width: 1%;
+      height: 1%;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 300px;
+      -ms-border-radius: 300px;
+      -o-border-radius: 300px;
+      border-radius: 300px;
+      /* behavior: url(./border-radius.htc); For IE, download and customize htc file http://curved-corner.googlecode.com/files/border-radius.htc */
+      -webkit-border-top-right-radius: 126px;
+      -moz-border-top-right-radius: 126px;
+      -ms-border-top-right-radius: 126px;
+      -o-border-top-right-radius: 126px;
+      border-top-right-radius: 126px;
+      -webkit-border-bottom-left-radius: 0;
+      -moz-border-bottom-left-radius: 0;
+      -ms-border-bottom-left-radius: 0;
+      -o-border-bottom-left-radius: 0;
+      border-bottom-left-radius: 0;
+      margin-left: 15px;
+      -webkit-transform-origin: -24% 122%;
+      -moz-transform-origin: -24% 122%;
+      -ms-transform-origin: -24% 122%;
+      -o-transform-origin: -24% 122%;
+      transform-origin: -24% 122%;
+      -webkit-animation: petalsGrow 0.5s;
+      -moz-animation: petalsGrow 0.5s;
+      -ms-animation: petalsGrow 0.5s;
+      animation: petalsGrow 0.5s;
+      -webkit-animation-delay: 1.5s;
+      -moz-animation-delay: 1.5s;
+      -ms-animation-delay: 1.5s;
+      animation-delay: 1.5s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      -moz-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      -ms-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      -o-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01); }
+      body header .flower_petal5:hover {
+        -webkit-box-shadow: inset 0 0 18px 8px #d886ce;
+        -moz-box-shadow: inset 0 0 18px 8px #d886ce;
+        box-shadow: inset 0 0 18px 8px #d886ce;
+        filter: progid:DXImageTransform.Microsoft.dropshadow OffX=31 px, OffY=38 px, Color="black", Positive= "false";
+        /* IE 5.5 */
+        border-collapse: separate;
+        /* Required by IE 9 */ }
+      @media screen and (min-width: 800px) {
+        body header .flower_petal5 {
+          background-color: red;
+          height: 100%;
+          width: 100%; }
+          body header .flower_petal5:hover {
+            -webkit-box-shadow: inset 0 0 18px 5px white;
+            -moz-box-shadow: inset 0 0 18px 5px white;
+            box-shadow: inset 0 0 18px 5px white;
+            filter: progid:DXImageTransform.Microsoft.dropshadow OffX=31 px, OffY=38 px, Color="black", Positive= "false";
+            /* IE 5.5 */
+            border-collapse: separate;
+            /* Required by IE 9 */ } }
+      @media screen and (max-width: 500px) {
+        body header .flower_petal5 {
+          -webkit-animation-name: sway_petal5;
+          -moz-animation-name: sway_petal5;
+          -ms-animation-name: sway_petal5;
+          animation-name: sway_petal5;
+          -webkit-animation-duration: 3s;
+          -moz-animation-duration: 3s;
+          -ms-animation-duration: 3s;
+          animation-duration: 3s;
+          -webkit-animation-fill-mode: inifinite;
+          -moz-animation-fill-mode: inifinite;
+          -ms-animation-fill-mode: inifinite;
+          animation-fill-mode: inifinite;
+          -webkit-animation-timing-function: out-sine;
+          -moz-animation-timing-function: out-sine;
+          -ms-animation-timing-function: out-sine;
+          animation-timing-function: out-sine;
+          height: 100%;
+          width: 100%; } }
+    body header .flower_petal6 {
+      background-color: #f86beb;
+      position: absolute;
+      -webkit-transform: rotate(270deg);
+      -moz-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+      -o-transform: rotate(270deg);
+      transform: rotate(270deg);
+      display: inline-block;
+      width: 1%;
+      height: 1%;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 300px;
+      -ms-border-radius: 300px;
+      -o-border-radius: 300px;
+      border-radius: 300px;
+      /* behavior: url(./border-radius.htc); For IE, download and customize htc file http://curved-corner.googlecode.com/files/border-radius.htc */
+      -webkit-border-top-right-radius: 126px;
+      -moz-border-top-right-radius: 126px;
+      -ms-border-top-right-radius: 126px;
+      -o-border-top-right-radius: 126px;
+      border-top-right-radius: 126px;
+      -webkit-border-bottom-left-radius: 0;
+      -moz-border-bottom-left-radius: 0;
+      -ms-border-bottom-left-radius: 0;
+      -o-border-bottom-left-radius: 0;
+      border-bottom-left-radius: 0;
+      margin-left: 15px;
+      -webkit-transform-origin: -24% 122%;
+      -moz-transform-origin: -24% 122%;
+      -ms-transform-origin: -24% 122%;
+      -o-transform-origin: -24% 122%;
+      transform-origin: -24% 122%;
+      -webkit-animation: petalsGrow 0.5s;
+      -moz-animation: petalsGrow 0.5s;
+      -ms-animation: petalsGrow 0.5s;
+      animation: petalsGrow 0.5s;
+      -webkit-animation-delay: 1.8s;
+      -moz-animation-delay: 1.8s;
+      -ms-animation-delay: 1.8s;
+      animation-delay: 1.8s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      -moz-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      -ms-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      -o-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01); }
+      body header .flower_petal6:hover {
+        -webkit-box-shadow: inset 0 0 18px 8px #f641e5;
+        -moz-box-shadow: inset 0 0 18px 8px #f641e5;
+        box-shadow: inset 0 0 18px 8px #f641e5;
+        filter: progid:DXImageTransform.Microsoft.dropshadow OffX=31 px, OffY=38 px, Color="black", Positive= "false";
+        /* IE 5.5 */
+        border-collapse: separate;
+        /* Required by IE 9 */ }
+      @media screen and (min-width: 800px) {
+        body header .flower_petal6 {
+          background-color: red;
+          height: 100%;
+          width: 100%; }
+          body header .flower_petal6:hover {
+            -webkit-box-shadow: inset 0 0 18px 5px white;
+            -moz-box-shadow: inset 0 0 18px 5px white;
+            box-shadow: inset 0 0 18px 5px white;
+            filter: progid:DXImageTransform.Microsoft.dropshadow OffX=31 px, OffY=38 px, Color="black", Positive= "false";
+            /* IE 5.5 */
+            border-collapse: separate;
+            /* Required by IE 9 */ } }
+      @media screen and (max-width: 500px) {
+        body header .flower_petal6 {
+          -webkit-animation-name: sway_petal6;
+          -moz-animation-name: sway_petal6;
+          -ms-animation-name: sway_petal6;
+          animation-name: sway_petal6;
+          -webkit-animation-duration: 3s;
+          -moz-animation-duration: 3s;
+          -ms-animation-duration: 3s;
+          animation-duration: 3s;
+          -webkit-animation-fill-mode: inifinite;
+          -moz-animation-fill-mode: inifinite;
+          -ms-animation-fill-mode: inifinite;
+          animation-fill-mode: inifinite;
+          -webkit-animation-timing-function: out-sine;
+          -moz-animation-timing-function: out-sine;
+          -ms-animation-timing-function: out-sine;
+          animation-timing-function: out-sine;
+          height: 100%;
+          width: 100%; } }
+    body header .flower_petal7 {
+      background-color: #cf6ca9;
+      position: absolute;
+      -webkit-transform: rotate(315deg);
+      -moz-transform: rotate(315deg);
+      -ms-transform: rotate(315deg);
+      -o-transform: rotate(315deg);
+      transform: rotate(315deg);
+      display: inline-block;
+      width: 1%;
+      height: 1%;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 300px;
+      -ms-border-radius: 300px;
+      -o-border-radius: 300px;
+      border-radius: 300px;
+      /* behavior: url(./border-radius.htc); For IE, download and customize htc file http://curved-corner.googlecode.com/files/border-radius.htc */
+      -webkit-border-top-right-radius: 126px;
+      -moz-border-top-right-radius: 126px;
+      -ms-border-top-right-radius: 126px;
+      -o-border-top-right-radius: 126px;
+      border-top-right-radius: 126px;
+      -webkit-border-bottom-left-radius: 0;
+      -moz-border-bottom-left-radius: 0;
+      -ms-border-bottom-left-radius: 0;
+      -o-border-bottom-left-radius: 0;
+      border-bottom-left-radius: 0;
+      margin-left: 15px;
+      -webkit-transform-origin: -24% 122%;
+      -moz-transform-origin: -24% 122%;
+      -ms-transform-origin: -24% 122%;
+      -o-transform-origin: -24% 122%;
+      transform-origin: -24% 122%;
+      -webkit-animation: petalsGrow 0.5s;
+      -moz-animation: petalsGrow 0.5s;
+      -ms-animation: petalsGrow 0.5s;
+      animation: petalsGrow 0.5s;
+      -webkit-animation-delay: 2.1s;
+      -moz-animation-delay: 2.1s;
+      -ms-animation-delay: 2.1s;
+      animation-delay: 2.1s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      -moz-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      -ms-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      -o-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01); }
+      body header .flower_petal7:hover {
+        -webkit-box-shadow: inset 0 0 18px 8px #c14290;
+        -moz-box-shadow: inset 0 0 18px 8px #c14290;
+        box-shadow: inset 0 0 18px 8px #c14290;
+        filter: progid:DXImageTransform.Microsoft.dropshadow OffX=31 px, OffY=38 px, Color="black", Positive= "false";
+        /* IE 5.5 */
+        border-collapse: separate;
+        /* Required by IE 9 */ }
+      @media screen and (min-width: 800px) {
+        body header .flower_petal7 {
+          background-color: red;
+          height: 100%;
+          width: 100%; }
+          body header .flower_petal7:hover {
+            -webkit-box-shadow: inset 0 0 18px 5px white;
+            -moz-box-shadow: inset 0 0 18px 5px white;
+            box-shadow: inset 0 0 18px 5px white;
+            filter: progid:DXImageTransform.Microsoft.dropshadow OffX=31 px, OffY=38 px, Color="black", Positive= "false";
+            /* IE 5.5 */
+            border-collapse: separate;
+            /* Required by IE 9 */ } }
+      @media screen and (max-width: 500px) {
+        body header .flower_petal7 {
+          -webkit-animation-name: sway_petal7;
+          -moz-animation-name: sway_petal7;
+          -ms-animation-name: sway_petal7;
+          animation-name: sway_petal7;
+          -webkit-animation-duration: 3s;
+          -moz-animation-duration: 3s;
+          -ms-animation-duration: 3s;
+          animation-duration: 3s;
+          -webkit-animation-fill-mode: inifinite;
+          -moz-animation-fill-mode: inifinite;
+          -ms-animation-fill-mode: inifinite;
+          animation-fill-mode: inifinite;
+          -webkit-animation-timing-function: out-sine;
+          -moz-animation-timing-function: out-sine;
+          -ms-animation-timing-function: out-sine;
+          animation-timing-function: out-sine;
+          height: 100%;
+          width: 100%; } }
+    body header .flower_petal8 {
+      background-color: #d6aae9;
+      position: absolute;
+      -webkit-transform: rotate(360deg);
+      -moz-transform: rotate(360deg);
+      -ms-transform: rotate(360deg);
+      -o-transform: rotate(360deg);
+      transform: rotate(360deg);
+      display: inline-block;
+      width: 1%;
+      height: 1%;
+      -webkit-border-radius: 300px;
+      -moz-border-radius: 300px;
+      -ms-border-radius: 300px;
+      -o-border-radius: 300px;
+      border-radius: 300px;
+      /* behavior: url(./border-radius.htc); For IE, download and customize htc file http://curved-corner.googlecode.com/files/border-radius.htc */
+      -webkit-border-top-right-radius: 126px;
+      -moz-border-top-right-radius: 126px;
+      -ms-border-top-right-radius: 126px;
+      -o-border-top-right-radius: 126px;
+      border-top-right-radius: 126px;
+      -webkit-border-bottom-left-radius: 0;
+      -moz-border-bottom-left-radius: 0;
+      -ms-border-bottom-left-radius: 0;
+      -o-border-bottom-left-radius: 0;
+      border-bottom-left-radius: 0;
+      margin-left: 15px;
+      -webkit-transform-origin: -24% 122%;
+      -moz-transform-origin: -24% 122%;
+      -ms-transform-origin: -24% 122%;
+      -o-transform-origin: -24% 122%;
+      transform-origin: -24% 122%;
+      -webkit-animation: petalsGrow 0.5s;
+      -moz-animation: petalsGrow 0.5s;
+      -ms-animation: petalsGrow 0.5s;
+      animation: petalsGrow 0.5s;
+      -webkit-animation-delay: 2.4s;
+      -moz-animation-delay: 2.4s;
+      -ms-animation-delay: 2.4s;
+      animation-delay: 2.4s;
+      -webkit-animation-fill-mode: forwards;
+      -moz-animation-fill-mode: forwards;
+      -ms-animation-fill-mode: forwards;
+      animation-fill-mode: forwards;
+      -webkit-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      -moz-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      -ms-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      -o-transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01);
+      transition: background-color 2s cubic-bezier(0.01, 0.02, 1, 1.01); }
+      body header .flower_petal8:hover {
+        -webkit-box-shadow: inset 0 0 18px 8px #ca91e3;
+        -moz-box-shadow: inset 0 0 18px 8px #ca91e3;
+        box-shadow: inset 0 0 18px 8px #ca91e3;
+        filter: progid:DXImageTransform.Microsoft.dropshadow OffX=31 px, OffY=38 px, Color="black", Positive= "false";
+        /* IE 5.5 */
+        border-collapse: separate;
+        /* Required by IE 9 */ }
+      @media screen and (min-width: 800px) {
+        body header .flower_petal8 {
+          background-color: red;
+          height: 100%;
+          width: 100%; }
+          body header .flower_petal8:hover {
+            -webkit-box-shadow: inset 0 0 18px 5px white;
+            -moz-box-shadow: inset 0 0 18px 5px white;
+            box-shadow: inset 0 0 18px 5px white;
+            filter: progid:DXImageTransform.Microsoft.dropshadow OffX=31 px, OffY=38 px, Color="black", Positive= "false";
+            /* IE 5.5 */
+            border-collapse: separate;
+            /* Required by IE 9 */ } }
+      @media screen and (max-width: 500px) {
+        body header .flower_petal8 {
+          -webkit-animation-name: sway_petal8;
+          -moz-animation-name: sway_petal8;
+          -ms-animation-name: sway_petal8;
+          animation-name: sway_petal8;
+          -webkit-animation-duration: 3s;
+          -moz-animation-duration: 3s;
+          -ms-animation-duration: 3s;
+          animation-duration: 3s;
+          -webkit-animation-fill-mode: inifinite;
+          -moz-animation-fill-mode: inifinite;
+          -ms-animation-fill-mode: inifinite;
+          animation-fill-mode: inifinite;
+          -webkit-animation-timing-function: out-sine;
+          -moz-animation-timing-function: out-sine;
+          -ms-animation-timing-function: out-sine;
+          animation-timing-function: out-sine;
+          height: 100%;
+          width: 100%; } }
+    body header .cloud {
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%;
+      /* behavior: url(./border-radius.htc); For IE, download and customize htc file http://curved-corner.googlecode.com/files/border-radius.htc */
+      background-color: white;
+      width: 1px;
+      height: 1px;
+      left: 0vw;
+      position: absolute;
+      top: 106px;
+      -webkit-box-shadow: 0 31px 1px 45px white, 57px 30px 1px 45px white, 122px 30px 1px 45px white, 153px -28px 1px 45px white, 184px 17px 1px 45px white, 29px -24px 1px 45px white, 56px 15px 1px 45px white, 97px -42px 1px 45px white, 90px -5px 1px 70px white;
+      -moz-box-shadow: 0 31px 1px 45px white, 57px 30px 1px 45px white, 122px 30px 1px 45px white, 153px -28px 1px 45px white, 184px 17px 1px 45px white, 29px -24px 1px 45px white, 56px 15px 1px 45px white, 97px -42px 1px 45px white, 90px -5px 1px 70px white;
+      box-shadow: 0 31px 1px 45px white, 57px 30px 1px 45px white, 122px 30px 1px 45px white, 153px -28px 1px 45px white, 184px 17px 1px 45px white, 29px -24px 1px 45px white, 56px 15px 1px 45px white, 97px -42px 1px 45px white, 90px -5px 1px 70px white;
+      filter: progid:DXImageTransform.Microsoft.dropshadow OffX=31 px, OffY=38 px, Color="black", Positive= "false";
+      /* IE 5.5 */
+      border-collapse: separate;
+      /* Required by IE 9 */
+      -webkit-transition: left 5s ease-in;
+      -moz-transition: left 5s ease-in;
+      -ms-transition: left 5s ease-in;
+      -o-transition: left 5s ease-in;
+      transition: left 5s ease-in; }
+    body header .flower_box {
+      height: 100px;
+      width: 100px;
+      margin: 0 auto;
+      position: absolute;
+      top: 35%;
+      left: 50%; }
+      body header .flower_box .stem {
+        height: 258px;
+        width: 21px;
+        background-color: #339933;
+        position: absolute;
+        bottom: -309px;
+        left: -20px; }
+      body header .flower_box .leaf {
+        height: 70%;
+        width: 100%;
+        position: absolute;
+        -webkit-border-radius: 400px 7px 400px 0/149px 0 150px 0;
+        -moz-border-radius: 400px 7px 400px 0/149px 0 150px 0;
+        -ms-border-radius: 400px 7px 400px 0/149px 0 150px 0;
+        -o-border-radius: 400px 7px 400px 0/149px 0 150px 0;
+        border-radius: 400px 7px 400px 0/149px 0 150px 0;
+        /* behavior: url(./border-radius.htc); For IE, download and customize htc file http://curved-corner.googlecode.com/files/border-radius.htc */
+        background: #339933;
+        -webkit-transform-origin: left;
+        -moz-transform-origin: left;
+        -ms-transform-origin: left;
+        -o-transform-origin: left;
+        transform-origin: left; }
+        body header .flower_box .leaf:nth-child(2) {
+          bottom: -196%;
+          -webkit-transform: rotatey(188deg) rotatez(15deg);
+          -moz-transform: rotatey(188deg) rotatez(15deg);
+          -ms-transform: rotatey(188deg) rotatez(15deg);
+          -o-transform: rotatey(188deg) rotatez(15deg);
+          transform: rotatey(188deg) rotatez(15deg);
+          left: -21px; }
+        body header .flower_box .leaf:nth-child(3) {
+          bottom: -250%;
+          left: -5px;
+          -webkit-transform: rotate(10deg);
+          -moz-transform: rotate(10deg);
+          -ms-transform: rotate(10deg);
+          -o-transform: rotate(10deg);
+          transform: rotate(10deg); }
+      body header .flower_box .flower_middle {
+        width: 70px;
+        height: 70px;
+        display: inline-block;
+        -webkit-border-radius: 50%;
+        -moz-border-radius: 50%;
+        -ms-border-radius: 50%;
+        -o-border-radius: 50%;
+        border-radius: 50%;
+        /* behavior: url(./border-radius.htc); For IE, download and customize htc file http://curved-corner.googlecode.com/files/border-radius.htc */
+        background: #ffcd39;
+        position: absolute;
+        top: 86%;
+        left: -44px;
+        z-index: 1;
+        -webkit-transition: color 2s ease-in;
+        -moz-transition: color 2s ease-in;
+        -ms-transition: color 2s ease-in;
+        -o-transition: color 2s ease-in;
+        transition: color 2s ease-in; }
+        @media screen and (min-width: 800px) {
+          body header .flower_box .flower_middle {
+            background: white; } }

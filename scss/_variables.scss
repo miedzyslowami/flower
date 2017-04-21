@@ -1,0 +1,22 @@
+//
+// $petal_height_start:20%;
+// $petal_width_start:20%;
+// $petal_height:75%;
+// $petal_width:155%;
+//$transform_origin_petals:left;
+//$margin-left:25px;//
+$petal_height_start:1%;//values for drop_shape
+$petal_width_start:1%;//values for drop_shape
+$petal_height:100%;//values for drop_shape
+$petal_width:100%;//values for drop_shape
+$transform_origin_petals:-24% 122%;//values for drop_shape
+$margin-left:15px;//values for drop_shape
+$petal_color_bigscreen:red;
+$random_position_list:(random(200px) - 150px) (random(100px) - 350px) (random(100px) + 5px) (random(100px) - 150px) (random(200px) - 150px) (random(100px) + 50px) (random(100px) + 50px) (random(200px) - 250px);
+// $random_position_list:(random(50px) - 200px) (random(50px) - 200px) (random(50px) - 200px) (random(50px) - 200px) (random(50px) - 200px)(random(50px) - 200px) (random(50px) - 200px)(random(50px) - 200px);
+$fall_speed:3s;
+$grow-speed:0.5s;
+$grow-delay:0.3s;
+$cloud_speed:5s;
+$blured_cloud_shadow:0 31px 38px 45px white, 57px 30px 38px 45px white, 122px 30px 38px 45px white, 153px -28px 38px 45px white, 184px 17px 38px 45px white, 29px -24px 38px 45px white, 56px 15px 38px 45px white, 97px -42px 38px 45px white, 90px -5px 55px 70px white;
+$regular_cloud_shadow:0 31px 1px 45px white, 57px 30px 1px 45px white, 122px 30px 1px 45px white, 153px -28px 1px 45px white, 184px 17px 1px 45px white, 29px -24px 1px 45px white, 56px 15px 1px 45px white, 97px -42px 1px 45px white, 90px -5px 1px 70px white;

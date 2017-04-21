@@ -1,0 +1,141 @@
+@import "variables";
+@import "keyframes";
+@import "mediaqueries";
+@import "prefix_mixins";
+@mixin cloud($position,$position_start) {
+    .cloud {
+        @include border_radius_simple (50%);
+        background-color: white;
+        width: 1px;
+        height: 1px;
+        left: $position_start;
+        position: absolute;
+        top: 106px;
+        @include boxshadow ($regular_cloud_shadow);
+        @include transition (left, $cloud_speed, ease-in);
+    }
+}
+@mixin drop_shape {
+    width: 1%;
+    height: 1%;
+    @include border_radius_simple(300px);
+    @include border_radius(top-right,126px);
+    @include border_radius(bottom-left,0);
+    margin-left: $margin-left;
+}
+// @mixin regular_shape {
+//      @include border_radius(top-right,112% 93%);
+//     @include border_radius(top-left,61% 57%);
+//     @include border_radius(bottom-left,61% 57%);
+//     @include border_radius(bottom-right,112% 93%);
+//     margin-left: 25px;
+// }
+
+body {
+    overflow: hidden;
+    background-color: rgba(125, 209, 240, 1);
+    @include transition (background-color, $cloud_speed, ease-in);
+
+    header {
+        height: 200px;
+        width: 100vw;
+        @for $i from 1 through 8 {
+            .flower_petal#{$i} {
+                $color: rgb((random(256)-1),(random(256)-1),(random(256)-1));
+                background-color: mix($color,white,70%);
+                position: absolute;
+                // @include boxshadow (inset 0 0 18px 5px white);
+                @include transform (rotate($i*45deg));
+                display: inline-block;
+                @include drop_shape;
+                @include transform_origin ($transform_origin_petals);
+                @include animation (petalsGrow, $grow-speed);
+                @include animation_delay ($i * $grow-delay);
+                @include animation_fill_mode (forwards);
+                @include transition (background-color, 2s, cubic-bezier(0.01, 0.02, 1, 1.01));
+
+                &:hover {
+                    @include boxshadow(inset 0 0 18px 8px mix(white,$color,10%));
+                }
+                @include bigresolution {
+                    background-color: $petal_color_bigscreen;
+                    // @include boxshadow (inset 0 0 18px 8px white);
+                    height: $petal_height;
+                    width: $petal_width;
+
+                    &:hover {
+                        // @include boxshadow (inset 0 0 18px 8px mix(white,$petal_color_bigscreen,10%));
+                        @include boxshadow (inset 0 0 18px 5px white);
+                    }
+                }
+                @include smallresolution {
+                     @include animation_name(sway_petal#{$i});
+                    @include animation_duration ($fall_speed);
+                    @include animation_fill_mode (inifinite);
+                    @include animation_timing_function (out-sine);
+                    height: $petal_height;
+                    width: $petal_width;
+                }
+            }
+        }
+        @include cloud (left,0vw);
+
+        .flower_box {
+            height: 100px;
+            width: 100px;
+            margin: 0 auto;
+            position: absolute;
+            top: 35%;
+            left: 50%;
+
+            .stem {
+                height: 258px;
+                width: 21px;
+                background-color: #339933;
+                position: absolute;
+                bottom: -309px;
+                // @include boxshadow (inset 0 0 18px 2px white);
+                left: -20px;
+            }
+
+            .leaf {
+                height: 70%;
+                width: 100%;
+                position: absolute;
+                @include border_radius_simple (400px 7px 400px 0 / 149px 0 150px 0);
+                background: mix(green,white,80%);
+                @include transform_origin(left);
+                // @include boxshadow(inset 0 0 18px 2px white);
+                &:nth-child(2) {
+                    bottom: -196%;
+                    @include transform (rotatey(188deg) rotatez(15deg));
+                    left: -21px;
+                }
+
+                &:nth-child(3) {
+                    bottom: -250%;
+                    left: -5px;
+                    @include transform (rotate(10deg));
+                }
+            }
+
+            .flower_middle {
+                width: 70px;
+                height: 70px;
+                display: inline-block;
+                @include border_radius_simple(50%);
+                background: mix(white,#FFC107,20%);
+                // @include boxshadow(inset 0 0 18px 2px white);
+                position: absolute;
+                top: 86%;
+                left: -44px;
+                z-index: 1;
+                @include transition (color, 2s, ease-in);
+                @include bigresolution {
+                    background: white;
+                    // @include boxshadow(0 0 28px 20px white);
+                }
+            }
+        }
+    }
+}

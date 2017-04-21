@@ -1,0 +1,12 @@
+$bigresolution: "screen and (min-width:800px)";
+$smallresolution: "screen and (max-width:500px)";
+@mixin bigresolution {
+     @media #{$bigresolution}{
+        @content;
+    }
+}
+@mixin smallresolution {
+     @media #{$smallresolution}{
+        @content;
+    }
+}

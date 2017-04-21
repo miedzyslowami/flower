@@ -1,0 +1,82 @@
+@mixin transition ($value, $time, $mode) {
+    -webkit-transition: $value $time $mode;
+    -moz-transition: $value $time $mode;
+    -ms-transition: $value $time $mode;
+    -o-transition: $value $time $mode;
+    transition: $value $time $mode;
+}
+@mixin boxshadow ($shadow...) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+    filter:progid:DXImageTransform.Microsoft.dropshadow( OffX=31px, OffY=38px, Color=  'black', Positive='false' );
+    /* IE 5.5 */
+    border-collapse: separate;
+    /* Required by IE 9 */
+}
+@mixin border_radius($direction,$value) {
+    -webkit-border-#{$direction}-radius: $value;
+    -moz-border-#{$direction}-radius: $value;
+    -ms-border-#{$direction}-radius: $value;
+    -o-border-#{$direction}-radius: $value;
+    border-#{$direction}-radius: $value;
+}
+@mixin border_radius_simple ($value...) {
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    -ms-border-radius: $value;
+    -o-border-radius: $value;
+    border-radius: $value;
+    /* behavior: url(./border-radius.htc); For IE, download and customize htc file http://curved-corner.googlecode.com/files/border-radius.htc */
+    //top-right 112% 93% border_radius($direction,$value)
+}
+@mixin transform($value...) {
+    -webkit-transform: $value;
+    -moz-transform: $value;
+    -ms-transform: $value;
+    -o-transform: $value;
+    transform: $value;
+}
+@mixin transform_origin ($origin) {
+    -webkit-transform-origin: $origin;
+    -moz-transform-origin: $origin;
+    -ms-transform-origin: $origin;
+    -o-transform-origin: $origin;
+    transform-origin: $origin;
+}
+@mixin animation ($name,$speed) {
+    -webkit-animation: $name $speed;
+    -moz-animation: $name $speed;
+    -ms-animation: $name $speed;
+    animation: $name $speed;
+}
+@mixin animation_name($name) {
+    -webkit-animation-name: $name;
+    -moz-animation-name: $name;
+    -ms-animation-name: $name;
+    animation-name: $name;
+}
+@mixin animation_duration ($duration) {
+    -webkit-animation-duration: $duration;
+    -moz-animation-duration: $duration;
+    -ms-animation-duration: $duration;
+    animation-duration: $duration;
+}
+@mixin animation_timing_function ($timing) {
+    -webkit-animation-timing-function: $timing;
+    -moz-animation-timing-function: $timing;
+    -ms-animation-timing-function: $timing;
+    animation-timing-function: $timing;
+}
+@mixin animation_fill_mode ($value) {
+    -webkit-animation-fill-mode: $value;
+    -moz-animation-fill-mode: $value;
+    -ms-animation-fill-mode: $value;
+    animation-fill-mode: $value;
+}
+@mixin animation_delay ($value) {
+    -webkit-animation-delay: $value;
+    -moz-animation-delay: $value;
+    -ms-animation-delay: $value;
+    animation-delay: $value;
+}
