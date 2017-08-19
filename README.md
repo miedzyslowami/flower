@@ -17,7 +17,7 @@ Cloud and darkening of the sky stop when stronger voice is detected.
 2.Write in a terminal ```npm install``` to install all deps
 
 ## **Usage:**
-1.Write in a terminal ```gulp default```- to run and watch changes in all scss files
-2.Write in a terminal ```webpack``` - to run compiler from jsx to js and to watch changes
+1.Write in a terminal ```gulp watch```- to run and watch changes in all scss files
+
 
 #sass #gulp #css #rwd #html5
