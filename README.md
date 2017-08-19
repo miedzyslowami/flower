@@ -1,4 +1,4 @@
-# Project name: FLOWER :flower:
+# Project name: FLOWER :star:
 
 TECHNOLOGIES: HTML5, CSS, SASS, RWD, GULP
 
